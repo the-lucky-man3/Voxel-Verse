@@ -1,0 +1,16 @@
+body { margin: 0; overflow: hidden; font-family: sans-serif; }
+#crosshair {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  font-size: 2em; color: white; pointer-events: none;
+}
+#health {
+  position: absolute; top: 10px; left: 10px; color: white; font-size: 1.2em;
+}
+#hotbar {
+  position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 5px; color: white; font-size: 1em;
+}
+.hotbar-slot {
+  border: 1px solid white; padding: 5px 10px; background: rgba(0,0,0,0.5);
+}
+.hotbar-selected { border-color: yellow; }
